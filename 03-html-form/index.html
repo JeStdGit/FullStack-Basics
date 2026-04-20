@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .row {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .submit-button {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Contact us</h1>
+
+
+    <form action="">
+        <div class="row">
+            <div class="column">
+                <label for="user_name">User Name</label>
+                <label for="password">Password</label>
+                <label for="email">Email</label>
+            </div>
+            
+            <div class="column">
+                <input id="user_name" type="text" placeholder="Enter your Name">
+                <input id="password" type="text" placeholder="Enter your Password">
+                <input id="email" type="email" placeholder="Enter your Email">
+            </div>
+        </div>
+
+        <button class="submit-button" type="submit">Send Message</button>
+    </form>
+</body>
+
+</html>

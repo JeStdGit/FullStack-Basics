@@ -1,0 +1,14 @@
+#sub-title-cont {
+    color: yellowgreen;
+    background-color: antiquewhite;
+}
+
+div {
+    color: burlywood;
+}
+
+.round-background-with-shadow {
+    border-radius: 25px;
+    box-shadow: 0em 0em 0.3em;
+    padding: 5px 10px;
+}
