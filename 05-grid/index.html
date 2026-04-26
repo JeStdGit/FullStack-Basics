@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            background-color: rgba(240, 248, 255, 0.5);
+            box-shadow: 1px 2px 5px rgba(240, 248, 255, 0.8);
+            border: 1px solid aliceblue;
+            border-radius: 20px;
+            padding: 20px;
+        }
+
+        .grid-item {
+            color: aliceblue;
+            background-color: rgba(100, 148, 237, 0.5);
+            box-shadow: 1px 2px 5px rgba(100, 148, 237, 0.3);
+            border: 1px solid cornflowerblue;
+            border-radius: 10px;
+            font-size: 1.4rem;
+            font-weight: bold;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        .main-feed {
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item main-feed">Card 1</div>
+        <div class="grid-item">Card 2</div>
+        <div class="grid-item">Card 3</div>
+        <div class="grid-item">Card 4</div>
+        <div class="grid-item">Card 5</div>
+        <div class="grid-item">Card 6</div>
+        <div class="grid-item">Card 7</div>
+        <div class="grid-item">Card 8</div>
+        <div class="grid-item">Card 9</div>
+    </div>
+</body>
+
+</html>
