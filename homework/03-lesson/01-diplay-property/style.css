@@ -3,7 +3,7 @@ body {
     font-weight: 550;
 }
 
-#menu-container {
+#top-bar-container {
     padding: 30px 45px;
     width: 100%;
     position: fixed;
@@ -12,7 +12,7 @@ body {
     background-color: aliceblue;
 }
 
-.menu-item {
+.top-bar-item {
     margin: 0px 5px;
     display: inline-block;
     padding: 1.5vh 2.5vw;
@@ -23,7 +23,7 @@ body {
     box-shadow: 0rem 0rem 0.2rem lightskyblue;
 }
 
-.menu-item:active {
+.top-bar-item:active {
     box-shadow: 0rem 0rem 0rem;
 }
 
