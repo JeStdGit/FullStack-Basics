@@ -7,7 +7,7 @@
 ## משימה 1: סרגל ניווט "דביק" (Sticky)
 
 ### נושאי ייחוס:
-* [עוגנים וניווט (Anchors & Navigations) (5:34:25)](https://youtu.be/NeeSJ3ZJzEg?t=12865)
+* [עוגנים וניווט (Anchors & Navigations) (5:34:25)](https://youtu.be/NeeSJ3ZJzEg?t=20065)
 * [עקרונות Flexbox (4:17:08)](https://youtu.be/NeeSJ3ZJzEg?t=15428)
 * [הצללת קופסה (Box Shadow) (6:20:05)](https://youtu.be/NeeSJ3ZJzEg?t=22805)
 * [אנימציות (מעברי CSS - Transitions)](https://youtu.be/NeeSJ3ZJzEg?t=26425)
