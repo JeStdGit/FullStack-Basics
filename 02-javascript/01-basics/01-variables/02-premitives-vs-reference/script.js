@@ -22,7 +22,7 @@ console.log(obj[blaBlaBla]);
 const obj1 = obj;
 
 obj1.address = "Totzeret Aharetz";
-obj["id"] = "212818991"
+obj["id"] = "212818991";
 
 console.log("obj:", obj);
-console.log("obj1", obj1);
+console.log("obj1:", obj1);
