@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="sidebar" class="default-border">
+      <header id="nav-header" class="default-border themed-color">
+        <span id="nav-header-icon" class="sidebar__logo" aria-hidden="true"
+          >⬡</span
+        >
+        <div id="nav-header-text">
+          <h3 id="nav-header-title">AI AGENTS</h3>
+          <h6 id="nav-header-subtitle">COMMAND CENTER</h6>
+        </div>
+      </header>
+
+      <ul class="nav-list">
+        <li>
+          <label
+            class="nav-item shadow-transitioned-card default-border themed-color"
+            for="nav-dashboard"
+            >Home / Dashboard</label
+          >
+        </li>
+        <li>
+          <label
+            class="nav-item shadow-transitioned-card default-border themed-color"
+            for="nav-agents"
+            >Agents & Logs</label
+          >
+        </li>
+        <li>
+          <label
+            class="nav-item shadow-transitioned-card default-border themed-color"
+            for="nav-agents"
+            >Create Agent</label
+          >
+        </li>
+        <li>
+          <label
+            class="nav-item shadow-transitioned-card default-border themed-color"
+            for="nav-analytics"
+            >Analytics</label
+          >
+        </li>
+        <li>
+          <label
+            class="nav-item shadow-transitioned-card default-border themed-color"
+            for="nav-settings"
+            >Settings</label
+          >
+        </li>
+      </ul>
+    </nav>
+    <main id="main-content">
+      <header class="top-header default-border">
+        <div id="search-container" class="themed-color default-border">
+          <span class="material-symbols-rounded">search</span>
+          <input
+            type="text"
+            id="search-bar"
+            class="themed-color"
+            placeholder="Search Agents..."
+          />
+        </div>
+
+        <div id="top-right-header">
+          <div id="notification-indicator" class="top-header-icon-button">
+            <span class="material-symbols-rounded">notifications</span>
+            <span id="notification-dot">3</span>
+          </div>
+
+          <div id="user-profile-container">
+            <div id="avatar_container">
+              <img src="avatar.png" alt="User" class="avatar" />
+              <span id="connected-dot" />
+            </div>
+            <div id="user-profile-text">
+              <span id="user-name">Jacob El</span>
+              <span id="user-role">SysAdmin</span>
+            </div>
+            <span class="material-symbols-rounded top-header-icon-button"
+              >keyboard_arrow_down</span
+            >
+          </div>
+        </div>
+      </header>
+
+      <section id="dashboard" class="bento-box">
+        <div
+          class="card active-agents shadow-transitioned-card default-border themed-color"
+        >
+          <h4>Active Agents</h4>
+          <h2>24</h2>
+          <span class="status-dot"></span>
+        </div>
+
+        <div
+          class="card total-executions shadow-transitioned-card default-border themed-color"
+        >
+          <h4>Total Executions</h4>
+          <h2>12.5k</h2>
+        </div>
+
+        <div
+          class="card performance-trends shadow-transitioned-card default-border themed-color"
+        >
+          <h3>Performance Trends</h3>
+        </div>
+
+        <div
+          class="card create-agent shadow-transitioned-card default-border themed-color"
+        >
+          <h3>Create New Agent</h3>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
