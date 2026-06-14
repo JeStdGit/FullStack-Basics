@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <div>
+            <label for="name-input">Name</label>
+            <input id="name-input" type="text">
+        </div>
+        <div>
+            <label for="email-input">Email</label>
+            <input id="email-input" type="email">
+        </div>
+        <input id="submit-button" type="button" value="submit">
+    </form>
+    <script>
+        const submitButton = document.getElementById("submit-button")
+        submitButton.onclick = () => alert("Submit Success")
+
+        const emailInput = document.getElementById("email-input")
+        emailInput.onmousemove = (ev) => {
+            console.log(ev);
+            const red = Math.min(ev.clientY * (ev.clientY / 10), 255)
+            const green = Math.min(ev.clientX, 255)
+            const blue = Math.min(Math.abs(red - green), 255)
+            const backgroundColor = `rgb(${red}, ${green}, ${blue})`
+            const textColor = `rgb(${Math.abs(255 - red)}, ${Math.abs(255 - green)}, ${Math.abs(255 - blue)})`
+
+
+            let redElem = document.getElementById("red-elem")
+            if (!redElem) {
+                redElem = document.createElement("div")
+                redElem.id = "red-elem"
+                document.body.appendChild(redElem)
+            }
+            redElem.innerText = `red: ${red}`
+            let greenElem = document.getElementById("green-elem")
+            if (!greenElem) {
+                greenElem = document.createElement("div")
+                greenElem.id = "green-elem"
+                document.body.appendChild(greenElem)
+            }
+            greenElem.innerText = `green: ${green}`
+            let blueElem = document.getElementById("blue-elem")
+            if (!blueElem) {
+                blueElem = document.createElement("div")
+                blueElem.id = "blue-elem"
+                document.body.appendChild(blueElem)
+            }
+            blueElem.innerText = `blue: ${blue}`
+            let backgroundElem = document.getElementById("background-elem")
+            if (!backgroundElem) {
+                backgroundElem = document.createElement("div")
+                backgroundElem.id = "background-elem"
+                document.body.appendChild(backgroundElem)
+            }
+            backgroundElem.innerText = `backgroundColor: ${backgroundColor}`
+            let textElem = document.getElementById("text-elem")
+            if (!textElem) {
+                textElem = document.createElement("div")
+                textElem.id = "text-elem"
+                document.body.appendChild(textElem)
+            }
+            textElem.innerText = `textColor: ${textColor}`
+            emailInput.style.backgroundColor = backgroundColor
+            emailInput.style.color = textColor
+            emailInput.style.borderColor = textColor
+        }
+    </script>
+</body>
+
+</html>
